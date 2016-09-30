@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+html, body{
+  height: 100%;
+}
+
+.grid{
+  /*margin: 0 auto;
+  margin-top: 50px;*/
+  max-width: 960px;
+  display: flex;
+}
+.col{
+  flex: 1;
+  background-color: rgb(208, 16, 16);
+  transition: all 1s ease;
+  opacity: .5;
+
+}
+.col:hover{
+  flex: 5;
+  opacity: 1;
+}
+.col:first-child{
+  background-color: rgb(3, 75, 120);
+}
+.col:last-child{
+  background-color: rgb(19, 209, 9);
+}
